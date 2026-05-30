@@ -19,7 +19,10 @@ SortBy              = "default"
 
 [sidebar]
     emoji    = "🍥"
-    subtitle = "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    subtitle = """
+    The idea of a single eureka moment is a dangerous lie."
+    — Mark Zuckerberg'
+    """
     avatar   = "img/avatar.png"
 
 [article]
