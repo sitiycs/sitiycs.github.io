@@ -20,7 +20,8 @@ weight: 1 # You can add weight to some posts to override the default sorting (da
 在 shell 中输入下列命令
 
 ```shell
-ssh <cse账号>@gw.cse.cuhk.edu.hk
+ssh -o ServerAliveInterval=30 <cse账号>@gw.cse.cuhk.edu.hk
+# `-o ServerAliveInterval=30` 可以使 ssh 每隔 30 秒自动从本地电脑发一个空包给服务器，防止中间网络设备因为空闲而切断连接
 ```
 
 可以看到出现 `<myHome>` 命令提示符
@@ -29,16 +30,16 @@ ssh <cse账号>@gw.cse.cuhk.edu.hk
 
 ### 连接 linux1
 
-为了能使用计算资源，还需要进一步连接 linux1 
+为了能使用计算资源，还需要进一步连接 linux1
 
 在 rbash 中，输入一下命令
 
 ```shell
-ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null <cse账号>@linux1.cse.cuhk.edu.hk
+ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -o ServerAliveInterval=30 <cse账号>@linux1.cse.cuhk.edu.hk
 ```
 
 可以看到出现 `<linux1>` 命令提示符，表示进入了 bash 命令行，这样就成功地连接到 cse 服务器了
 
 ## 后记
 
-我在测试后十分钟内没有命令行操作依然保持着连接，所以看到 triple uni 中的那篇 [关于 cse vpn 的帖子](https://tripleuni.com/post/731155) 时，不清楚洞主说的 “我现在是先ssh到cse gateway (@csegw那个)然后再继续ssh，但连过去以后不操作半分钟就自己断掉了😢” 是什么情况，jrm 有懂的吗
+第一次没加 `-o ServerAliveInterval=30`，以为万事大吉了，然后看到了 triple uni 中的那篇 [关于 cse vpn 的帖子](https://tripleuni.com/post/731155) 时，发现自己的 ssh 没过几分钟的时候就断掉了，然后问了 deepseek 才补上的 `-o ServerAliveInterval=30`，这不好笑
