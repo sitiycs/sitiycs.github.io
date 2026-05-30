@@ -24,11 +24,13 @@ ssh <cse账号>@gw.cse.cuhk.edu.hk
 ```
 
 可以看到出现 `<myHome>` 命令提示符
+
 这是一个 rbash (Restricted BASH, 被大幅受限的 Linux Shell )，在这里不可以使用 cat, nano, > 等命令
 
 ### 连接 linux1
 
-为了能使用计算资源，还需要进一步连接 linux1
+为了能使用计算资源，还需要进一步连接 linux1 
+
 在 rbash 中，输入一下命令
 
 ```shell
