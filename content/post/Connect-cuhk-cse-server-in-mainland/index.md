@@ -9,9 +9,15 @@ tags:
 weight: 1 # You can add weight to some posts to override the default sorting (date descending)
 ---
 
+### 前言
+
+试过单挂 cse openvpn, 同时挂 cse openvpn 和 globalprotect(access.cuhk.edu.hk)，都不能连接到 cse 服务器，然后就放弃 VPN 了
+
+下面是在终端中使用 ssh 从内地连接学校 cse 服务器的办法
+
 ### 利用跳板机
 
-在 shell 中输入下列命令
+在 shell 中输入下列命令( linux bash 和 windows powershell 均可，mac 不清楚，可以试试)
 
 ```shell
 ssh <cse账号>@gw.cse.cuhk.edu.hk
