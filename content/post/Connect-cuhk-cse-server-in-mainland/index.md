@@ -2,6 +2,7 @@
 title: 在内地连接 cuhk cse 服务器
 description: 放弃 VPN 了
 date: 2026-05-30
+slug: "connect-cse-server"
 categories:
   - 杂项
 tags:
