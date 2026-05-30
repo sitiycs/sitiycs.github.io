@@ -6,7 +6,7 @@ slug: "connect-cse-server"
 categories:
   - 杂项
 tags:
-  - cuhk
+  - CUHK
 weight: 1 # You can add weight to some posts to override the default sorting (date descending)
 ---
 
