@@ -39,5 +39,4 @@ ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null <cse账号>@linu
 
 ## 后记
 
-我在测试后十分钟内没有命令行操作依然保持着连接，所以看到 triple uni 中的那篇关于 cse vpn 的帖子时，不清楚洞主说的 “我现在是先ssh到cse gateway (@csegw那个)然后再继续ssh，但连过去以后不操作半分钟就自己断掉了😢” 是什么情况，jrm 有懂的吗
-
+我在测试后十分钟内没有命令行操作依然保持着连接，所以看到 triple uni 中的那篇 [关于 cse vpn 的帖子](https://tripleuni.com/post/731155) 时，不清楚洞主说的 “我现在是先ssh到cse gateway (@csegw那个)然后再继续ssh，但连过去以后不操作半分钟就自己断掉了😢” 是什么情况，jrm 有懂的吗
