@@ -5,7 +5,7 @@ slug: hello-world
 date: 2026-05-30
 categories:
   - 杂项
-weight: 0 # You can add weight to some posts to override the default sorting (date descending)
+weight: 1 # You can add weight to some posts to override the default sorting (date descending)
 ---
 
 Welcome to Hugo theme Stack. This is sitiy's first post.
