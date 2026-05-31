@@ -29,17 +29,19 @@ ssh -o ServerAliveInterval=30 <cse账号>@gw.cse.cuhk.edu.hk
 
 这是一个 rbash (Restricted BASH, 被大幅受限的 Linux Shell )，在这里不可以使用 cat, nano, > 等命令
 
-### 连接 linux1
+### 连接 linux
 
-为了能使用计算资源，还需要进一步连接 linux1
+为了能使用计算资源，还需要进一步连接 linux
 
 在 rbash 中，输入一下命令
 
 ```shell
-ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -o ServerAliveInterval=30 <cse账号>@linux1.cse.cuhk.edu.hk
+ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -o ServerAliveInterval=30 <cse账号>@<linux主机名>.cse.cuhk.edu.hk
 ```
 
-可以看到出现 `<linux1>` 命令提示符，表示进入了 bash 命令行，这样就成功地连接到 cse 服务器了
+替换成自己的cse账号和自己的linux主机名
+
+可以看到出现类似于 `<linux1>` 的命令提示符，表示进入了 bash 命令行，这样就成功地连接到 cse 服务器了
 
 ## 后记
 
