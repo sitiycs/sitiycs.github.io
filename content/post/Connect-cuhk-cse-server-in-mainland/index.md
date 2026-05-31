@@ -43,6 +43,8 @@ ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -o ServerAliveIn
 
 可以看到出现类似于 `<linux1>` 的命令提示符，表示进入了 bash 命令行，这样就成功地连接到 cse 服务器了
 
+实测不进行操作挂 20 分钟都不会断
+
 ## 后记
 
 第一次没加 `-o ServerAliveInterval=30`，以为万事大吉了，然后看到了 triple uni 中的那篇 [关于 cse vpn 的帖子](https://tripleuni.com/post/731155) 时，发现自己的 ssh 没过几分钟的时候就断掉了，然后问了 deepseek 才补上的 `-o ServerAliveInterval=30`，这不好笑
